@@ -1,14 +1,21 @@
 <template>
-  <NavBar></NavBar>
+  <div>
+    <!-- <nav>
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link> |
+      <router-link to="/services">Services</router-link>
+    </nav> -->
+    <ServicesComp />
+  </div>
 </template>
 
 <script>
-import NavBar from "./components/NavBar.vue";
+import ServicesComp from "./components/ServicesComp.vue";
 export default {
   name: "App",
 
   components: {
-    NavBar,
+    ServicesComp,
   },
 };
 </script>
